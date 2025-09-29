@@ -1,0 +1,45 @@
+body {
+  scroll-behavior: smooth;
+}
+
+/* Hero Section */
+.hero {
+  background: url('https://source.unsplash.com/1600x700/?travel,nature') no-repeat center center/cover;
+  color: white;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.5);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+/* Package Cards */
+.package-card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Testimonials */
+.testimonial {
+  background: #f8f9fa;
+  padding: 2rem;
+  border-radius: 10px;
+}

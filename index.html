@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel & Tour Packages</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">TravelGo</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+      data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" 
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#packages">Packages</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-content container">
+    <h1>Explore the World with Us</h1>
+    <p class="lead">Exclusive tour packages & unforgettable travel experiences</p>
+    <a href="#packages" class="btn btn-primary btn-lg mt-3">View Packages</a>
+  </div>
+</section>
+
+<!-- Packages Section -->
+<section id="packages" class="py-5">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-4">Popular Tour Packages</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card package-card shadow-sm">
+          <img src="https://source.unsplash.com/600x400/?tajmahal" class="card-img-top" alt="Taj Mahal">
+          <div class="card-body">
+            <h5 class="card-title">Agra & Taj Mahal</h5>
+            <p class="card-text">1 Day / 1 Night – Guided sightseeing & stay.</p>
+            <a href="#contact" class="btn btn-outline-primary">Book Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card package-card shadow-sm">
+          <img src="https://source.unsplash.com/600x400/?beach" class="card-img-top" alt="Goa Beach">
+          <div class="card-body">
+            <h5 class="card-title">Goa Beach Escape</h5>
+            <p class="card-text">3 Days / 2 Nights – Fun, music & adventure.</p>
+            <a href="#contact" class="btn btn-outline-primary">Book Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card package-card shadow-sm">
+          <img src="https://source.unsplash.com/600x400/?mountains" class="card-img-top" alt="Himalaya">
+          <div class="card-body">
+            <h5 class="card-title">Himalayan Adventure</h5>
+            <p class="card-text">5 Days / 4 Nights – Trekking & scenic beauty.</p>
+            <a href="#contact" class="btn btn-outline-primary">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="py-5 bg-light">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <img src="https://source.unsplash.com/600x400/?travel,plane" class="img-fluid rounded shadow" alt="About Us">
+      </div>
+      <div class="col-md-6">
+        <h2 class="fw-bold">Why Choose Us?</h2>
+        <p>We specialize in curating unique travel experiences. From historic tours to luxury escapes, our packages are tailored for every traveler.</p>
+        <ul>
+          <li>✔ Affordable Packages</li>
+          <li>✔ Professional Guides</li>
+          <li>✔ 24/7 Customer Support</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="py-5">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-4">What Our Travelers Say</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="testimonial shadow-sm">
+          <p>"Best trip ever! Everything was perfectly arranged."</p>
+          <h6>- Priya Sharma</h6>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="testimonial shadow-sm">
+          <p>"Affordable and fun packages. Highly recommended."</p>
+          <h6>- Rajesh Kumar</h6>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="testimonial shadow-sm">
+          <p>"Loved the service! Will travel with them again."</p>
+          <h6>- Anjali Verma</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-5 bg-dark text-white">
+  <div class="container">
+    <h2 class="fw-bold text-center mb-4">Get in Touch</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <form id="contactForm">
+          <div class="mb-3">
+            <label class="form-label">Full Name</label>
+            <input type="text" class="form-control" placeholder="Your Name" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Email Address</label>
+            <input type="email" class="form-control" placeholder="Your Email" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Message</label>
+            <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+      <div class="col-md-6 d-flex align-items-center">
+        <ul class="list-unstyled">
+          <li><strong>📍 Address:</strong> Delhi, India</li>
+          <li><strong>📞 Phone:</strong> +91 9876543210</li>
+          <li><strong>✉ Email:</strong> info@travelgo.com</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center py-3 bg-secondary text-white">
+  <p class="mb-0">© 2025 TravelGo. All Rights Reserved.</p>
+</footer>
+
+<!-- JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
