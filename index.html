@@ -3,16 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Travel & Tour Packages</title>
+  <title>My Travel Landing Page</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+
   <div class="container">
-    <a class="navbar-brand fw-bold" href="#">TravelGo</a>
+		<div class="navbar-brand" style="line-height: 1.35; padding-top: 10px;">
+		  <a href="#" class="fw-bold" style="color: #1e3c72; font-size: 2.8rem; text-decoration: none;">TurR X</a><br>
+		  <span style="font-size: 1rem; font-weight: 600;color: #1e3c72; display: block;">From Birdsong to Battlements — Xperience the X-Factor</span>
+		  <span style="font-size: 1rem; font-weight: 600;color: #1e3c72; display: block;">Trek. Unwind. Roam. Xplore.</span>
+		</div>
+
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
       data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" 
       aria-label="Toggle navigation">
@@ -20,146 +26,264 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="#packages">Packages</a></li>
-        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        <li class="nav-item"><a class="nav-link fw-bold text-decoration-underline" href="#packages" style="color: #1e3c72; font-size: 1.4rem;" >Start Planning</a></li>
+        <li class="nav-item"><a class="nav-link fw-bold text-decoration-underline" href="#about" style="color: #1e3c72;font-size: 1.4rem;">Journey</a></li>
+        <li class="nav-item"><a class="nav-link fw-bold text-decoration-underline" href="#contact" style="color: #1e3c72;font-size: 1.4rem;">Let’s Talk</a></li>
       </ul>
+	  
+
+
+
     </div>
   </div>
 </nav>
 
 <!-- Hero Section -->
-<section class="hero">
+<section class="hero text-white" style="background-color:#1e3c72; padding:150px 0;">
   <div class="hero-content container">
-    <h1>Explore the World with Us</h1>
-    <p class="lead">Exclusive tour packages & unforgettable travel experiences</p>
-    <a href="#packages" class="btn btn-primary btn-lg mt-3">View Packages</a>
+    <h1>Experience the World in Royal Style with TurR X</h1>
+    <p class="lead" style="font-size: 1.3rem;" >From private shoots in iconic destinations to stays in royal suites, TurX curates journeys that redefine luxury travel.</p>
+
+  </div>
+</section>
+
+<!-- Treat Section -->
+<section id="perks" class="py-5 bg-white text-center">
+  <div class="container">
+    <h2 class="fw-bold mb-4">🎉✨ Unforgettable Moments Await! ✨🎉</h2>
+    <p class="lead mb-5">We’re rolling out the royal carpet for our guests with these exclusive treats:</p>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-3">
+        <div class="p-4 border rounded shadow-sm h-100">
+          <div class="fs-1">🎁</div>
+          <h5 class="mt-3">Souvenir Gift</h5>
+          <p>Because memories deserve a keepsake.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="p-4 border rounded shadow-sm h-100">
+          <div class="fs-1">👑</div>
+          <h5 class="mt-3">Special Winner Reward</h5>
+          <p>A luxurious Royal Suite stay with a gourmet dinner plan.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="p-4 border rounded shadow-sm h-100">
+          <div class="fs-1">🛎️</div>
+          <h5 class="mt-3">On‑Trip Support</h5>
+          <p>Dedicated caretaker or manager service for a smooth journey.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="p-4 border rounded shadow-sm h-100">
+          <div class="fs-1">💑</div>
+          <h5 class="mt-3">Couple’s Romantic Shoot</h5>
+          <p>Capture your love story in style for FB, Insta & WhatsApp!</p>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
 <!-- Packages Section -->
 <section id="packages" class="py-5">
   <div class="container text-center">
-    <h2 class="fw-bold mb-4">Popular Tour Packages</h2>
+    <h2 class="fw-bold mb-4">Our Tour Packages</h2>
     <div class="row g-4">
+
+      <!-- Package 1: River Rush -->
       <div class="col-md-4">
-        <div class="card package-card shadow-sm">
-          <img src="https://source.unsplash.com/600x400/?tajmahal" class="card-img-top" alt="Taj Mahal">
+        <div class="card package-card shadow-sm h-100">
+          <img src="images/river-rush.jpg" class="card-img-top" alt="River Rush">
           <div class="card-body">
-            <h5 class="card-title">Agra & Taj Mahal</h5>
-            <p class="card-text">1 Day / 1 Night – Guided sightseeing & stay.</p>
+            <h5 class="card-title">🌊 TurR X : River Rush</h5>
+            <p class="card-text">
+              <strong>Route:</strong> Bharatpur – Fatehpur Sikri – Chambal Safari <br>
+              A thrilling 2N/3D adventure combining history, wildlife, and river safari — perfect for explorers.
+            </p>
             <a href="#contact" class="btn btn-outline-primary">Book Now</a>
           </div>
         </div>
       </div>
+
+      <!-- Package 2: Green Legacy -->
       <div class="col-md-4">
-        <div class="card package-card shadow-sm">
-          <img src="https://source.unsplash.com/600x400/?beach" class="card-img-top" alt="Goa Beach">
+        <div class="card package-card shadow-sm h-100">
+          <img src="images/green-legacy.jpg" class="card-img-top" alt="Green Legacy">
           <div class="card-body">
-            <h5 class="card-title">Goa Beach Escape</h5>
-            <p class="card-text">3 Days / 2 Nights – Fun, music & adventure.</p>
+            <h5 class="card-title">🌿 TurR X : Green Legacy</h5>
+            <p class="card-text">
+              <strong>Route:</strong> Bharatpur – Fatehpur Sikri – Band Baretha <br>
+              A 2N/3D eco-retreat blending nature, heritage, and sustainability — ideal for mindful travelers.
+            </p>
             <a href="#contact" class="btn btn-outline-primary">Book Now</a>
           </div>
         </div>
       </div>
+
+      <!-- Package 3: Timeless Path (2N/3D) -->
       <div class="col-md-4">
-        <div class="card package-card shadow-sm">
-          <img src="https://source.unsplash.com/600x400/?mountains" class="card-img-top" alt="Himalaya">
+        <div class="card package-card shadow-sm h-100">
+          <img src="images/timeless-path.jpg" class="card-img-top" alt="Timeless Path 2N/3D">
           <div class="card-body">
-            <h5 class="card-title">Himalayan Adventure</h5>
-            <p class="card-text">5 Days / 4 Nights – Trekking & scenic beauty.</p>
+            <h5 class="card-title">🛤️ TurR X : Timeless Path (2N/3D)</h5>
+            <p class="card-text">
+              <strong>Route:</strong> Bharatpur – Fatehpur Sikri <br>
+              A 2N/3D cultural journey through historic landscapes and Mughal architecture, ideal for heritage enthusiasts.
+            </p>
             <a href="#contact" class="btn btn-outline-primary">Book Now</a>
           </div>
         </div>
       </div>
+
+      <!-- Package 4: Timeless Path (1N/2D) -->
+      <div class="col-md-6">
+        <div class="card package-card shadow-sm h-100">
+          <img src="images/timeless-path-short.jpg" class="card-img-top" alt="Timeless Path 1N/2D">
+          <div class="card-body">
+            <h5 class="card-title">🛤️ TurR X : Timeless Path (1N/2D)</h5>
+            <p class="card-text">
+              <strong>Route:</strong> Bharatpur – Fatehpur Sikri <br>
+              A short 1N/2D cultural journey through historic landscapes and Mughal architecture, perfect for a quick getaway.
+            </p>
+            <a href="#contact" class="btn btn-outline-primary">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Package 5: Marsh Melody -->
+      <div class="col-md-6">
+        <div class="card package-card shadow-sm h-100">
+          <img src="images/marsh-melody.jpg" class="card-img-top" alt="Marsh Melody">
+          <div class="card-body">
+            <h5 class="card-title">🌾 TurR X : Marsh Melody</h5>
+            <p class="card-text">
+              <strong>Route:</strong> Bharatpur <br>
+              A serene 1N/2D escape into the wetlands of Bharatpur, perfect for nature lovers and birdwatchers.
+            </p>
+            <a href="#contact" class="btn btn-outline-primary">Book Now</a>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
 
-<!-- About Section -->
-<section id="about" class="py-5 bg-light">
+
+
+
+
+<!-- About Us Section -->
+
+<section id="about" class="py-6 text-white" 
+  style="background-color:#1e3c72; padding:200px 0;">
   <div class="container">
-    <div class="row align-items-center">
-      <div class="col-md-6">
-        <img src="https://source.unsplash.com/600x400/?travel,plane" class="img-fluid rounded shadow" alt="About Us">
-      </div>
-      <div class="col-md-6">
-        <h2 class="fw-bold">Why Choose Us?</h2>
-        <p>We specialize in curating unique travel experiences. From historic tours to luxury escapes, our packages are tailored for every traveler.</p>
-        <ul>
-          <li>✔ Affordable Packages</li>
-          <li>✔ Professional Guides</li>
-          <li>✔ 24/7 Customer Support</li>
-        </ul>
-      </div>
-    </div>
+    <h2 class="fw-bold">Our Journey with TurR X</h2>
+    <p class="lead">From dreams to destinations — redefining the way the world travels.</p>
+    <p>
+      I personally set out to explore destinations — step by step, experiencing them myself to see what truly works for real travelers. 
+      Along the way, I realized that every journey is different: some families look for budget‑friendly adventures, others dream of luxury escapes, 
+      and couples often want something unforgettable for their wedding or honeymoon.
+    </p>
+    <p>
+      That’s why I built TurR X — to bring together all kinds of travel experiences, from simple family getaways to royal suites and curated escapes. 
+      Every trip is designed with care, so no matter your style or budget, you’ll find a journey that feels just right.
+    </p>
   </div>
 </section>
+
 
 <!-- Testimonials -->
-<section class="py-5">
+<section id="testimonials" class="py-5 bg-light">
   <div class="container text-center">
     <h2 class="fw-bold mb-4">What Our Travelers Say</h2>
-    <div class="row g-4">
-      <div class="col-md-4">
-        <div class="testimonial shadow-sm">
-          <p>"Best trip ever! Everything was perfectly arranged."</p>
-          <h6>- Priya Sharma</h6>
+    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <blockquote class="blockquote">
+            <p>"Best trip ever! Everything was perfectly arranged."</p>
+            <footer class="blockquote-footer">Priya Sharma</footer>
+          </blockquote>
         </div>
-      </div>
-      <div class="col-md-4">
-        <div class="testimonial shadow-sm">
-          <p>"Affordable and fun packages. Highly recommended."</p>
-          <h6>- Rajesh Kumar</h6>
+        <div class="carousel-item">
+          <blockquote class="blockquote">
+            <p>"Affordable and fun packages. Highly recommended."</p>
+            <footer class="blockquote-footer">Shiva Kumar</footer>
+          </blockquote>
         </div>
-      </div>
-      <div class="col-md-4">
-        <div class="testimonial shadow-sm">
-          <p>"Loved the service! Will travel with them again."</p>
-          <h6>- Anjali Verma</h6>
+        <div class="carousel-item">
+          <blockquote class="blockquote">
+            <p>"Loved the service! Will travel with them again."</p>
+            <footer class="blockquote-footer">Anjali Verma</footer>
+          </blockquote>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Contact Section -->
-<section id="contact" class="py-5 bg-dark text-white">
-  <div class="container">
-    <h2 class="fw-bold text-center mb-4">Get in Touch</h2>
-    <div class="row">
-      <div class="col-md-6">
-        <form id="contactForm">
-          <div class="mb-3">
-            <label class="form-label">Full Name</label>
-            <input type="text" class="form-control" placeholder="Your Name" required>
-          </div>
-          <div class="mb-3">
-            <label class="form-label">Email Address</label>
-            <input type="email" class="form-control" placeholder="Your Email" required>
-          </div>
-          <div class="mb-3">
-            <label class="form-label">Message</label>
-            <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Send Message</button>
-        </form>
-      </div>
-      <div class="col-md-6 d-flex align-items-center">
-        <ul class="list-unstyled">
-          <li><strong>📍 Address:</strong> Delhi, India</li>
-          <li><strong>📞 Phone:</strong> +91 9876543210</li>
-          <li><strong>✉ Email:</strong> info@travelgo.com</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
+<!-- Contact Boxes Section -->
+  <section id="contact" class="contact-section">
+		<div class="page-wrapper">
+		  <div class="contact-card">
+			<h2 class="fw-bold">Connect With Us</h2>
+
+
+			<div class="contact-item">
+			  <i class="fas fa-map-marker-alt"></i>
+			  <span style="white-space: nowrap;"> <strong>📍Location:</strong> Bharatpur, Rajasthan, India – 321001</span>
+			</div>
+
+			<div class="contact-item">
+			  <i class="fas fa-envelope"></i>
+			  <span><strong>✉️ Email:</strong> <a href="mailto:hello@turrx.com">hello@turrx.com</a></span>
+			</div>
+
+			<div class="contact-item">
+			  <i class="fas fa-phone-alt"></i>
+			<span><strong> 📞 Phone:</strong> <a href="tel:+916376113582">+91-6376113582</a></span>
+			</div>
+
+			<div class="social-icons">
+
+				<div class="d-flex flex-wrap justify-content-center gap-4 mt-4">
+				  <a href="https://www.facebook.com/TurRX01/" target="_blank" style="text-align: center; text-decoration: none;">
+					<img src="images/fb.png" alt="Facebook" style="height: 50px;">
+					<div style="font-weight: bold; font-size: 1.2rem; color: #1e3c72; margin-top: 5px;">Facebook</div>
+				  </a>
+
+				  <a href="https://www.instagram.com/turrx_01/" target="_blank" style="text-align: center; text-decoration: none;">
+					<img src="images/in.jpg" alt="Instagram" style="height: 50px;">
+					<div style="font-weight: bold; font-size: 1.2rem; color: #1e3c72; margin-top: 5px;">Instagram</div>
+				  </a>
+
+				  <a href="https://wa.me/916376113582" target="_blank" style="text-align: center; text-decoration: none;">
+					<img src="images/whatsapp.jpg" alt="WhatsApp" style="height: 50px;">
+					<div style="font-weight: bold; font-size: 1.2rem; color: #1e3c72; margin-top: 5px;">WhatsApp</div>
+				  </a>
+
+				  <a href="https://forms.gle/zAr2RYWiWLD6JbHT9" target="_blank" style="text-align: center; text-decoration: none;">
+					<img src="images/form.jpg" alt="Google Form" style="height: 50px;">
+					<div style="font-weight: bold; font-size: 1.2rem; color: #1e3c72; margin-top: 5px;">Booking Form</div>
+				  </a>
+				</div>
+		 
+			</div>
+		  </div>
+		</div>
+  </section>
 
 <!-- Footer -->
-<footer class="text-center py-3 bg-secondary text-white">
-  <p class="mb-0">© 2025 TravelGo. All Rights Reserved.</p>
+
+
+<footer class="py-3 text-white" style="background-color:#1e3c72; padding:40px 0;">
+  <div class="container">
+    <p class="fw-bold">© 2025 TurR X · All Rights Reserved</p>
+  </div>
 </footer>
+
+
 
 <!-- JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
