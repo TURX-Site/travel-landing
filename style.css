@@ -1,133 +1,127 @@
 
-body {
+/* Reset / base */
+html, body {
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', Arial, sans-serif;
   background: #f9fafb;
-  height: 100vh;
-  text-align: center;
-
+  color: #222;
+  min-height: 100%;
 }
 
+/* Images */
+img { max-width: 100%; height: auto; display: block; }
+
+/* NAVBAR tweaks */
+.navbar {
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+  z-index: 1000;
+}
+.navbar .navbar-brand { line-height: 1; padding-top: 6px; }
+.navbar .brand-title {
+  color: #1e3c72;
+  font-weight: 700;
+  font-size: 1.6rem; /* desktop size */
+  display: block;
+  letter-spacing: -0.5px;
+}
+.navbar .brand-sub {
+  color: #1e3c72;
+  font-weight: 600;
+  font-size: 0.85rem;
+  display: block;
+  line-height: 1.1;
+  margin-top: 2px;
+}
+
+/* nav links (keep them readable but not oversized on phones)
+   Use !important in the small-screen rule to override inline styles in your HTML */
 .navbar-nav .nav-link {
+  color: #1e3c72;
+  font-weight: 700;
+  font-size: 1.05rem;
   text-decoration: underline;
+  padding: .45rem .6rem;
+}
+@media (max-width: 768px) {
+  .navbar-nav .nav-link { font-size: 0.95rem !important; } /* override inline font-size on mobile */
 }
 
-
-/* Hero Section */
+/* HERO */
 .hero {
-  background: url('https://source.unsplash.com/1600x700/?travel,nature') no-repeat center center/cover;
-  color: white;
-  height: 75vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  background: url('https://source.unsplash.com/1600x700/?travel,nature') center/cover no-repeat;
+  color: #fff;
+  padding: 120px 15px 70px;     /* avoid fixed vh to prevent overflow on mobiles */
   position: relative;
 }
-
 .hero::before {
   content: "";
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0,0,0,0.5);
+  position: absolute; inset: 0;
+  background: rgba(0,0,0,0.45);
 }
+.hero-content { position: relative; z-index: 2; max-width: 1000px; margin: 0 auto; padding: 0 12px; }
+.hero h1 { font-size: 2.7rem; margin: 0 0 10px; font-weight: 700; }
+.hero p.lead { font-size: 1.1rem; margin: 0 0 10px; }
 
-.hero-content {
-  position: relative;
-  z-index: 2;
-}
+/* PACKAGES */
+.package-card { border-radius: 12px; overflow: hidden; }
+.package-card img { height: 200px; object-fit: cover; }
 
-.hero h1 {
-  font-size: 4rem;
-  font-weight: bold;
-}
-
-/* Package Cards */
-.package-card img {
-  height: 200px;
-  object-fit: cover;
-}
-
-
-/* Testimonials */
-.testimonial {
-  background: #f8f9fa;
-  padding: 2rem;
-  border-radius: 10px;
-}
-/*Connect Us*/   
-
-.page-wrapper {
-  display: Outline-block;
-  margin: 50px auto;
-  text-align: left;
-}
-
+/* CONTACT / CONNECT */
+.contact-section { padding: 40px 15px; background: transparent; }
 .contact-card {
   background: #fff;
-  padding: 10px 50px;
-  border-radius: 18px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  max-width: 600px;
-  width: 100%;
-  margin: 0 auto;
+  padding: 22px;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  max-width: 760px;
+  margin: 18px auto;
+  text-align: left;
+}
+.contact-card h2 { text-align: center; font-size: 1.6rem; margin-bottom: 14px; }
+.contact-item { display: flex; align-items: flex-start; gap: 10px; margin: 12px 0; color: #333; }
+.contact-item i { color: #1e3c72; width: 28px; margin-top: 4px; }
+.contact-item span { white-space: normal; word-break: break-word; }
+
+/* SOCIAL ICONS */
+.social-icons { display: flex; justify-content: center; gap: 18px; flex-wrap: wrap; margin-top: 12px; }
+.social-icons a { text-decoration: none; color: #1e3c72; text-align: center; font-weight: 700; }
+.social-icons a img { width: 52px; height: 52px; border-radius: 12px; display: block; margin: 0 auto; }
+
+/* FOOTER */
+footer { background: #1e3c72; color: #fff; padding: 18px 0; text-align: center; }
+
+/* RESPONSIVE ADJUSTMENTS */
+@media (max-width: 992px) {
+  .hero { padding: 90px 12px 50px; }
+  .hero h1 { font-size: 2rem; }
+  .package-card img { height: 160px; }
+}
+@media (max-width: 576px) {
+  .hero { padding: 70px 10px 40px; }
+  .hero h1 { font-size: 1.6rem; }
+  .package-card img { height: 120px; }
+  .social-icons a img { width: 44px; height: 44px; }
+  /* hide secondary tagline on very small screens */
+  .navbar .brand-sub { display: none; }
 }
 
-.contact-card h2 {
-  font-size: 34px;
-  margin-bottom: 20px;
-  color: #333;
-  text-align: center;
+/* Testimonials blockquote */
+.blockquote {
+  background: transparent;   /* no background */
+  border: none;              /* no border */
+  font-size: 1.2rem;
+  font-style: italic;
+  margin: 20px auto;
+  max-width: 600px;          /* keep it neat */
+  color: #333;               /* dark text */
 }
 
-.contact-item {
+.blockquote-footer {
   display: block;
-  margin: 15px 0;
-  font-size: 16px;
-  color: #444;
+  margin-top: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1e3c72;            /* your brand blue */
+  text-align: right;         /* align name to right */
 }
-
-
-.contact-item i {
-  font-size: 20px;
-  color: #1877f2;
-  margin-right: 10px;
-}
-
-.contact-item span {
-  line-height: 1.5;
-}
-
-
-
-.contact-item strong {
-  color: #1e3c72;
-  margin-right: 5px;
-}
-
-.contact-item span {
-  white-space: nowrap;
-}
-
-
-/*social icons*/
-    .social-icons {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-    }
-
-    .social-icons a img {
-      width: 55px;      /* size of the logo */
-      height: 55px;
-      border-radius: 15px;  /* rounded-square like your FB icon */
-      transition: all 0.3s ease-in-out;
-    }
-
-    .social-icons a img:hover {
-      transform: scale(1.1);
-      opacity: 0.9;
-    }
-	
-/*Footer*/
