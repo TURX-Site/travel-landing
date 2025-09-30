@@ -79,7 +79,7 @@ img { max-width: 100%; height: auto; display: block; }
   text-align: left;
 }
 .contact-card h2 { text-align: center; font-size: 1.6rem; margin-bottom: 14px; }
-.contact-item { display: flex; align-items: flex-start; gap: 10px; margin: 12px 0; color: #333; }
+.contact-item { display: flex; align-items: centre;  justify-content: center; gap: 10px; margin: 12px 0; color: #333; }
 .contact-item i { color: #1e3c72; width: 28px; margin-top: 4px; }
 .contact-item span { white-space: normal; word-break: break-word; }
 
