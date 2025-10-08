@@ -14,19 +14,20 @@ img { max-width: 100%; height: auto; display: block; }
 
 /* NAVBAR tweaks */
 .navbar {
+  background-color: #6FA89F;
   box-shadow: 0 2px 6px rgba(0,0,0,0.06);
   z-index: 1000;
 }
 .navbar .navbar-brand { line-height: 1; padding-top: 6px; }
 .navbar .brand-title {
-  color: #1e3c72;
+  color: #FFFAFA;
   font-weight: 700;
   font-size: 1.6rem; /* desktop size */
   display: block;
   letter-spacing: -0.5px;
 }
 .navbar .brand-sub {
-  color: #1e3c72;
+  color: #FFFAFA;
   font-weight: 600;
   font-size: 0.85rem;
   display: block;
@@ -37,7 +38,7 @@ img { max-width: 100%; height: auto; display: block; }
 /* nav links (keep them readable but not oversized on phones)
    Use !important in the small-screen rule to override inline styles in your HTML */
 .navbar-nav .nav-link {
-  color: #1e3c72;
+  color: #6FA89F;
   font-weight: 700;
   font-size: 1.05rem;
   text-decoration: underline;
@@ -125,3 +126,4 @@ footer { background: #1e3c72; color: #fff; padding: 18px 0; text-align: center; 
   color: #1e3c72;            /* your brand blue */
   text-align: right;         /* align name to right */
 }
+
